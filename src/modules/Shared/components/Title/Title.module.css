@@ -1,0 +1,13 @@
+.titelConatiner {
+    background-color: var(--table) !important;
+
+    h3 {
+        font-size: 1.75rem;
+        font-weight: 500;
+    }
+
+}
+
+.title {
+    color: var(--dark-color);
+}

@@ -1,0 +1,15 @@
+.bg-cards {
+    background-color: var(--bg-Authcolor);
+    min-height: 30rem;
+    border: 1px solid yellow;
+
+    .bg-card {
+        background-color: var(--main-colr);
+    }
+
+}
+
+h4 {
+
+    color: var(--color-titledrag) !important;
+}

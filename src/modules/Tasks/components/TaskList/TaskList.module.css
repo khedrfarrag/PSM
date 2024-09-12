@@ -1,0 +1,5 @@
+.bgColrTable {
+    background-color: var(--bg-Authcolor) !important;
+    border-radius: 25px;
+    color: var(--color) !important;
+}

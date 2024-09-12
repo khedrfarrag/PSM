@@ -1,0 +1,29 @@
+.navContainer {
+    i {
+        font-size: 1.4rem;
+    }
+
+    .navbarCollapse {
+        img {
+            width: 10% !important;
+        }
+
+        .cantentNav {
+            p {
+                margin-bottom: 0rem !important;
+                font-size: 0.875rem;
+                color: var(--color-username);
+            }
+
+            span {
+                font-size: 0.75rem;
+                color: var(--color-username) !important;
+
+            }
+        }
+
+        i {
+            font-size: 1.2rem;
+        }
+    }
+}

@@ -1,0 +1,231 @@
+/* ---------------------- common style ---------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* background-color: var(--color); */
+}
+
+:root {
+  --main-colr: rgba(239, 155, 40, 1);
+  --main-bg: rgba(239, 155, 40, 1);
+  --bg-Authcolor: rgba(49, 89, 81, 0.9);
+  --bg-border-bottom: rgba(255, 255, 255, 1);
+  --table: rgba(245, 245, 245, 1);
+  --bg-card: rgba(248, 249, 251, 1);
+  --minubtn: rgba(239, 155, 40, 0.3);
+  --dash-item1: rgba(229, 230, 244, 1);
+  --dash-item2: rgba(244, 244, 229, 1);
+  --dash-item3: rgba(244, 229, 237, 1);
+  --iconbg: rgba(207, 209, 236, 1);
+  --iconbg2: rgba(228, 228, 188, 1);
+  --iconbg3: rgba(231, 195, 215, 1);
+  --color: #707276;
+  --app-color: rgba(255, 255, 255, 1);
+  --dark-color: #101418;
+  --App-color: wght;
+  --headproject: #707276;
+  --color-titledrag: #101418;
+  --color-username: #101418;
+}
+
+
+.Dark-mode {
+  --main-colr: rgba(239, 155, 40, 1);
+  --color-titledrag: rgba(255, 255, 255, 1);
+  --color-username: rgba(255, 255, 255, 1);
+  --main-bg: #101418;
+  --bg-Authcolor: #101418;
+  --bg-border-bottom: #383737;
+  --table: #101418;
+  --bg-card: #101418;
+  --minubtn: rgba(239, 155, 40, 0.3);
+  --dash-item1: rgba(229, 230, 244, 1);
+  --dash-item2: rgba(244, 244, 229, 1);
+  --dash-item3: rgba(244, 229, 237, 1);
+  --iconbg: rgba(207, 209, 236, 1);
+  --iconbg2: rgba(228, 228, 188, 1);
+  --iconbg3: rgba(231, 195, 215, 1);
+  --color: #fff;
+  --dark-color: #fff;
+  --App-color: #101418;
+}
+
+
+
+body {
+  font-family: 'Montserrat', sans-serif !important;
+  background-color: var(--App-color) !important;
+
+}
+
+.main-colr {
+  color: var(--main-colr);
+}
+
+.main-bg {
+  background-color: var(--main-colr);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* ---------------------- auth-layout ----------------------*/
+.auth-container {
+  background-image: url("../src/assets/bg1.png");
+  background-position: center center;
+  background-size: cover;
+
+
+  .auth-item {
+    background-color: var(--bg-Authcolor);
+  }
+
+  label {
+    font-size: 0.8rem;
+  }
+
+  input {
+    background-color: transparent;
+    border: none;
+    border-radius: 0px;
+    padding-left: 0px;
+  }
+
+  .border-icon,
+  input {
+    border-bottom: var(--bg-border-bottom);
+  }
+
+  input::placeholder,
+  input:focus {
+    color: var();
+    background-color: transparent;
+  }
+
+  input:focus {
+    background-color: transparent;
+  }
+
+  .form-control {
+    color: var(--color) !important;
+    box-shadow: none !important;
+  }
+
+  .auth-title {
+    p {
+      margin: 0px;
+    }
+
+    h3 {
+      font-size: 2rem;
+    }
+
+    .frist-ch::after {
+      content: "";
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 16px;
+      height: 4px;
+      background-color: var(--main-colr);
+    }
+  }
+
+  .lodin-links {
+    .link-item:hover {
+      color: var(--main-colr) !important;
+    }
+
+    .link-item {
+      transition: all .3s;
+    }
+  }
+
+  .container-register {
+    background-color: var(--bg-Authcolor);
+    width: 90% !important;
+  }
+
+  .PersonImg {
+    height: 10rem;
+  }
+
+  .layer-img {
+    background-color: var(--bg-Authcolor);
+
+  }
+}
+
+
+/* ---------------------- sideBar comp ---------------------- */
+.sidebar-container {
+  .ps-sidebar-root {
+    transition: all 0.4s ease-in-out;
+  }
+
+  .css-1wvake5 {
+    border-right: none !important;
+  }
+
+  .ps-sidebar-container {
+    background-color: var(--bg-Authcolor) !important;
+    transition: all .3s ease-in-out;
+  }
+
+  .ps-menu-button:hover,
+  .ps-menu-button:focus {
+    background-color: var(--minubtn) !important;
+    border-radius: 15px;
+    border-color: transparent !important;
+  }
+
+  .ps-menu-button.active {
+    color: var(--main-colr);
+  }
+
+  .icon-toggle i {
+    padding: 0.8rem 0.25rem;
+    transition: transform 0.3s ease-in-out;
+  }
+}
+
+@media (max-width: 768px) {
+  .css-1wvake5.ps-collapsed {
+    width: 65px !important;
+    min-width: 65px !important;
+  }
+
+  .css-1t8x7v1>.ps-menu-button {
+    padding-left: 10px !important;
+  }
+}
+
+/*  ---------------------- table  ---------------------- */
+
+
+.table-striped {
+  background-color: var(--table) !important;
+
+  .dropdown-toggle::after {
+    display: none;
+  }
+}
+
+
+.accordion {
+  .accordion-button:not(.collapsed) {
+    box-shadow: none
+  }
+}

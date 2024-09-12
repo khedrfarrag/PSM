@@ -1,0 +1,48 @@
+.dashboardContainer {
+
+    .bgCard {
+        background-color: var(--bg-card);
+    }
+
+    .titelCard {
+        border-left: 4px solid var(--main-colr) !important;
+    }
+
+    h4 {
+        font-size: 1.43rem;
+        color: var(--color) !important;
+
+    }
+
+    h5,
+    p {
+        font-size: 0.8125rem;
+        color: var(--color) !important;
+
+    }
+
+    .itemCard1 {
+        background-color: var(--dash-item1);
+    }
+
+    .itemCard2 {
+        background-color: var(--dash-item2);
+    }
+
+    .itemCard3 {
+        background-color: var(--dash-item3);
+    }
+
+    .iconBg1 {
+        background-color: var(--iconbg);
+    }
+
+    .iconBg2 {
+        background-color: var(--iconbg2);
+    }
+
+    .iconBg3 {
+        background-color: var(--iconbg3);
+    }
+
+}
